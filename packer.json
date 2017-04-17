@@ -1,0 +1,41 @@
+{
+"builders": [
+  {
+  "type": "openstack",
+  "identity_endpoint": "http://172.19.74.169:5000/v3",
+  "tenant_name": "admin",
+  "domain_name": "Default",
+  "username": "admin",
+  "password": "password",
+  "region": "RegionOne",
+  "use_floating_ip": true,
+  "floating_ip_pool": "external",
+  "ssh_username": "ubuntu",
+  "image_name": "packer-ubuntu",
+  "networks": ["f60c08bd-3f40-41ae-b5f7-256ac9c7b8ac"],
+  "source_image": "6d153be4-c261-4380-90e2-858f7da2c560",
+  "flavor": "m1.small",
+  "insecure": "true"
+  }
+  ],
+"provisioners": [
+  {
+      "destination": "/home/ubuntu/tomcat7",
+      "source": "./tomcat7",
+      "type": "file"
+  },
+  {
+      "destination": "/home/ubuntu/tomcat-users.xml",
+      "source": "./tomcat-users.xml",
+      "type": "file"
+  },
+  {
+    "type": "shell",
+    "inline": [
+    "tomcat_installation.sh",
+    "",
+    "",
+    
+  ]
+  }]
+}
