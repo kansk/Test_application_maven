@@ -37,8 +37,7 @@
     "git clone https://github.com/steinsag/gwt-maven-example",
     "cd gwt-maven-example",
     "sudo mvn clean install",
-    "mvn tomcat7:run-war-only",
-    "sudo service tomcat7 restart" 
+    "mvn tomcat7:run-war-only" 
   ]
   }]
 }
