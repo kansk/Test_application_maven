@@ -42,7 +42,6 @@
     "cd gwt-maven-example",
     "sudo mvn clean install",
     "mvn tomcat7:run-war-only",
-    "sudo service tomcat7 restart", 
-  ]
+    "sudo service tomcat7 restart"]
   }]
 }
