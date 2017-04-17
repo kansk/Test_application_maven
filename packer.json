@@ -32,7 +32,8 @@
   {
     "type": "shell",
     "inline": [
-    "sudo apt-get update",
+    "sudo export http_proxy=http://165.225.104.34:80",
+    "sudo export https_proxy=https://165.225.104.34:80",
     "sudo apt-get install -y default-jdk",
     "sudo apt-get install -y tomcat7",
     "sudo apt-get install -y tomcat7-docs tomcat7-admin tomcat7-examples",
@@ -42,6 +43,7 @@
     "cd gwt-maven-example",
     "sudo mvn clean install",
     "mvn tomcat7:run-war-only",
-    "sudo service tomcat7 restart"]
+    "sudo service tomcat7 restart", 
+  ]
   }]
 }
