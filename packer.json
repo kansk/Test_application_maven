@@ -35,6 +35,7 @@
     "export http_proxy=http://165.225.104.34:80",
     "export https_proxy=https://165.225.104.34:80",
     "apt-get update && apt-get upgrade",
+     "apt-get install aptitude",
     "apt-get -f install",
     "apt-get -y install git",
     "git clone https://github.com/steinsag/gwt-maven-example",
