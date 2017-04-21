@@ -2,18 +2,17 @@
 "builders": [
   {
   "type": "openstack",
-  "identity_endpoint": "http://172.19.74.169:5000/v3",
+  "identity_endpoint": "http://172.19.74.170:5000/v2",
   "tenant_name": "admin",
-  "domain_name": "Default",
   "username": "admin",
-  "password": "password",
+  "password": "mypass",
   "region": "RegionOne",
   "use_floating_ip": true,
   "floating_ip_pool": "external",
   "ssh_username": "ubuntu",
   "image_name": "packer-ubuntu",
-  "networks": ["f60c08bd-3f40-41ae-b5f7-256ac9c7b8ac"],
-  "source_image": "6d153be4-c261-4380-90e2-858f7da2c560",
+  "networks": ["cb3abed9-5fed-4797-a759-f3bbef7846be"],
+  "source_image_name": "ubuntu-16",
   "flavor": "m1.small",
   "insecure": "true"
   }
