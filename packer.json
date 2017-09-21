@@ -2,10 +2,10 @@
 "builders": [
   {
   "type": "openstack",
-  "identity_endpoint": "http://172.19.74.170:5000/v2",
+  "identity_endpoint": "http://172.19.74.70:5000/v3",
   "tenant_name": "admin",
   "username": "admin",
-  "password": "mypass",
+  "password": "password",
   "region": "RegionOne",
   "use_floating_ip": true,
   "floating_ip_pool": "external",
